@@ -25,3 +25,13 @@ class SaleOrderLine(models.Model):
             })
             if self.env.context.get('import_file', False) and not self.env.user.user_has_groups('account.group_account_manager'):
                 line.tax_id.invalidate_cache(['invoice_repartition_line_ids'], [line.tax_id.id])
+
+
+class QuotationCoefficient(models.Model):
+    _name = 'quotation.coefficient'
+    _description = 'Coefficients for the order line price calculation'
+
+    name = fields.Text(string='Nom', required=True)
+    description = fields.Text(string='Description', required=False)
+    coeff = fields.Float(string='Coefficient', required=True, default=0.00) 
+

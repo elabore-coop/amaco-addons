@@ -70,6 +70,8 @@ This module is maintained by ELABORE.
     # always loaded
     'data': [
         'views/sale_views.xml',
+        'views/quotation_coef.xml',
+        'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
