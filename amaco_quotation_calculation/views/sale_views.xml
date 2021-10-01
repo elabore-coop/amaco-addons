@@ -11,6 +11,7 @@
                     <field name="price_fourniture"/>
                     <field name="price_misc"/>
                     <field name="price_service"/>
+                    <field name="apply_coeff"/>
                 </xpath>
             </field>
         </record>
