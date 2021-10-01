@@ -5,20 +5,24 @@ from odoo import api, models, fields
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
+    activate_calculation_fields = fields.Boolean('Activate calculation fields', default=False)
     price_hr = fields.Float('HR', required=True, digits='Product Price', default=0.0)
     price_fourniture = fields.Float('Fourniture', required=True, digits='Product Price', default=0.0)
     price_misc = fields.Float('Misc.', required=True, digits='Product Price', default=0.0)
     price_service = fields.Float('Service', required=True, digits='Product Price', default=0.0)
     apply_coeff = fields.Boolean('Apply Coeff', default=False)
  
-    @api.depends('product_uom_qty', 'discount', 'price_unit', 'tax_id', 'price_hr', 'price_fourniture', 'price_misc', 'price_service', 'apply_coeff')
+    @api.depends('product_uom_qty', 'discount', 'price_unit', 'tax_id', 'activate_calculation_fields', 'price_hr', 'price_fourniture', 'price_misc', 'price_service', 'apply_coeff')
     def _compute_amount(self):
         """
         Compute the amounts of the SO line.
         """
         for line in self:
-            input_price = line.price_unit + line.price_hr + line.price_fourniture + line.price_misc + line.price_service
-            if line.apply_coeff:
+            if line.activate_calculation_fields:
+                input_price = line.price_unit + line.price_hr + line.price_fourniture + line.price_misc + line.price_service
+            else:
+                input_price = line.price_unit
+            if line.activate_calculation_fields and line.apply_coeff:
                 global_coeff = 1
                 coeff_lines = self.env['quotation.coefficient'].search([])
                 for coeff_line in coeff_lines:

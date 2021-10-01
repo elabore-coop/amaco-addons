@@ -7,11 +7,12 @@
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="before">
-                    <field name="price_hr"/>
-                    <field name="price_fourniture"/>
-                    <field name="price_misc"/>
-                    <field name="price_service"/>
-                    <field name="apply_coeff"/>
+                    <field name="activate_calculation_fields"/>
+                    <field name="price_hr" attrs="{'readonly': [('activate_calculation_fields', '=', False)]}"/>
+                    <field name="price_fourniture" attrs="{'readonly': [('activate_calculation_fields', '=', False)]}"/>
+                    <field name="price_misc" attrs="{'readonly': [('activate_calculation_fields', '=', False)]}"/>
+                    <field name="price_service" attrs="{'readonly': [('activate_calculation_fields', '=', False)]}"/>
+                    <field name="apply_coeff" attrs="{'readonly': [('activate_calculation_fields', '=', False)]}"/>
                 </xpath>
             </field>
         </record>
