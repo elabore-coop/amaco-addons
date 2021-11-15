@@ -2,28 +2,28 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    'name': 'amaco_quotation_calculation',
+    'name': 'amaco_odoo_customization',
     'version': '13.0.0.0.1',
     'author': 'Elabore',
     'maintainer': 'False',
     'website': 'False',
     'license': '',
     'category': 'False',
-    'summary': 'Customize calculation process of the quotations',
+    'summary': 'Customize the Amaco''s Odoo Instance',
     'description': """
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
-===========================
-amaco_quotation_calculation
-===========================
-This module customizes the calculation process of the quotations:
- - the user can add sub-amounts in the quotation
- - the total amount is the sum of all the sub-amounts
+========================
+amaco_odoo_customization
+========================
+This module customizes Amaco''s Odoo instance:
+ - archive analytic account when lead is archived
+ - ...
 
 Installation
 ============
-Just install amaco_quotation_calculation, all dependencies will be installed by default.
+Just install amaco_odoo_customization, all dependencies will be installed by default.
 
 Known issues / Roadmap
 ======================
@@ -61,18 +61,14 @@ This module is maintained by ELABORE.
     # any module necessary for this one to work correctly
     'depends': [
         'base',
-        'sale',
+        'crm',
     ],
     'external_dependencies': {
         'python': [],
     },
 
     # always loaded
-    'data': [
-        'views/sale_views.xml',
-        'views/quotation_coef.xml',
-        'security/ir.model.access.csv',
-    ],
+    'data': [],
     # only loaded in demonstration mode
     'demo': [
     ],
