@@ -2,8 +2,9 @@
 
 from odoo import models, api
 
+
 class Lead(models.Model):
-    _inherit="crm.lead"
+    _inherit = "crm.lead"
 
     def write(self, vals):
         res = super(Lead, self).write(vals)

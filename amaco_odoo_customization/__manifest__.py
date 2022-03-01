@@ -2,15 +2,15 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    'name': 'amaco_odoo_customization',
-    'version': '13.0.0.0.1',
-    'author': 'Elabore',
-    'maintainer': 'False',
-    'website': 'False',
-    'license': '',
-    'category': 'False',
-    'summary': 'Customize the Amaco''s Odoo Instance',
-    'description': """
+    "name": "amaco_odoo_customization",
+    "version": "13.0.0.0.1",
+    "author": "Elabore",
+    "maintainer": "False",
+    "website": "False",
+    "license": "",
+    "category": "False",
+    "summary": "Customize the Amaco" "s Odoo Instance",
+    "description": """
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
@@ -57,32 +57,29 @@ Maintainer
 This module is maintained by ELABORE.
 
 """,
-
     # any module necessary for this one to work correctly
-    'depends': [
-        'base',
-        'crm',
+    "depends": [
+        "base",
+        "crm",
+        "sale",
         "project",
         "sale_timesheet",
     ],
-    'external_dependencies': {
-        'python': [],
+    "external_dependencies": {
+        "python": [],
     },
-
     # always loaded
     "data": [
         "views/project.xml",
     ],
-
-    'js': [],
-    'css': [],
-    'qweb': [],
-
-    'installable': True,
     # only loaded in demonstration mode
     "demo": [],
+    "js": [],
+    "css": [],
+    "qweb": [],
+    "installable": True,
     # Install this module automatically if all dependency have been previously
     # and independently installed.  Used for synergetic or glue modules.
-    'auto_install': False,
-    'application': False,
+    "auto_install": False,
+    "application": False,
 }
