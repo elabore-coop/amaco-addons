@@ -62,15 +62,15 @@ This module is maintained by ELABORE.
     'depends': [
         'base',
         'crm',
+        "project",
     ],
     'external_dependencies': {
         'python': [],
     },
 
     # always loaded
-    'data': [],
-    # only loaded in demonstration mode
-    'demo': [
+    "data": [
+        "views/project.xml",
     ],
 
     'js': [],
@@ -78,6 +78,8 @@ This module is maintained by ELABORE.
     'qweb': [],
 
     'installable': True,
+    # only loaded in demonstration mode
+    "demo": [],
     # Install this module automatically if all dependency have been previously
     # and independently installed.  Used for synergetic or glue modules.
     'auto_install': False,
