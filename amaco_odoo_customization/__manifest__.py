@@ -63,6 +63,7 @@ This module is maintained by ELABORE.
         'base',
         'crm',
         "project",
+        "sale_timesheet",
     ],
     'external_dependencies': {
         'python': [],
