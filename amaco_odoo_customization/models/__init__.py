@@ -3,3 +3,4 @@
 from . import crm_lead
 from . import project
 from . import sale_order
+from . import account_move
