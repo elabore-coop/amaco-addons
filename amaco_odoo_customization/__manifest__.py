@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "13.0.0.0.1",
+    "version": "13.0.1.0.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
