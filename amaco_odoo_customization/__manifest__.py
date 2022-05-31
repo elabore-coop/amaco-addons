@@ -3,23 +3,21 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "13.0.1.0.0",
+    "version": "14.0.1.0.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
-    "license": "",
+    "license": "AGPL-3",
     "category": "False",
     "summary": "Customize the Amaco" "s Odoo Instance",
     "description": """
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-   :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-   :alt: License: AGPL-3
 ========================
 amaco_odoo_customization
 ========================
 This module customizes Amaco''s Odoo instance:
  - archive analytic account when lead is archived
- - ...
+ - add values to employee departure reasons
+ - add team_id field in project model
 
 Installation
 ============
