@@ -1,0 +1,159 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* amaco_odoo_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-04 16:06+0000\n"
+"PO-Revision-Date: 2022-07-04 16:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard__departure_reason
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__departure_reason
+msgid "Departure Reason"
+msgstr "Raison du départ"
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_hr_departure_wizard
+msgid "Departure Wizard"
+msgstr "Assistant de départ"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "Afficher Nom"
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_hr_employee
+msgid "Employee"
+msgstr "Employé"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_departure_wizard__departure_reason__contract_ended
+msgid "End of contract"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__fixed_term_contract_ended
+msgid "End of fixed-term contract"
+msgstr "Fin de CDD"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__fixed_term_contract_other_termination
+msgid "End of fixed-term contract for other reasons"
+msgstr "Autres cas de rupture anticipée de CDD (faute grave, force majeur, inaptitude)"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__personnal_firing
+msgid "Fired for personal reasons"
+msgstr "Licenciement pour motif personnel"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_crm_lead__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Piste/opportunité"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_departure_wizard__departure_reason__agreed_termination
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__agreed_termination
+msgid "Mutually agreed termination of contract"
+msgstr "Rupture Conventionnelle"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__fixed_term_contract_agreed_termination
+msgid "Mutually agreed termination of fixed-term contract"
+msgstr "Rupture anticipée CDD d’un commun accord"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_bank_statement_line__invoice_origin
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move__invoice_origin
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_payment__invoice_origin
+msgid "Origin"
+msgstr "Origine"
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_project_project
+msgid "Project"
+msgstr "Projet"
+
+#. module: amaco_odoo_customization
+#: code:addons/amaco_odoo_customization/models/project.py:0
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__team_id
+#, python-format
+msgid "Pôle"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__redudancy_firing
+msgid "Redudancy Firing"
+msgstr "Licenciement économique"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__resigned
+msgid "Resigned"
+msgstr "Démission"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__retired
+msgid "Retired"
+msgstr "Départ à la retraite"
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de bons de commande"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,help:amaco_odoo_customization.field_account_bank_statement_line__invoice_origin
+#: model:ir.model.fields,help:amaco_odoo_customization.field_account_move__invoice_origin
+#: model:ir.model.fields,help:amaco_odoo_customization.field_account_payment__invoice_origin
+msgid "The document(s) that generated the invoice."
+msgstr "Le (s) document (s) qui a généré la facture."
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__transition_fixed_term_to_permanent_contract
+msgid "Transition from fixed-term to permanent contract"
+msgstr "Rupture anticipée CDD suite à une embauche en CDI"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__try_period_termination
+msgid "Try period termination"
+msgstr "Rupture de période d’essai"
