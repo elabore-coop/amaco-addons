@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="recovery_allocations_requests_wizard" model="ir.ui.view">
+            <field name="name">recovery.allocations.requests.wizard</field>
+            <field name="model">recovery.allocation.requests</field>
+            <field name="arch" type="xml">
+                <form string="Create recovery allocations requests">
+                    <group name="dates" string="Period to consider">
+                        <group>
+                            <field name="campaign_name" />
+                            <field name="date_from" widget="date" />
+                            <field name="date_to" widget="date" />
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Create allocations requests" name="generate_recovery_allocations" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-secondary" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="recovery_allocations_requests_wizard_action" model="ir.actions.act_window">
+            <field name="name">Create recovery allocations requests</field>
+            <field name="res_model">recovery.allocation.requests</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="recovery_allocations_requests_wizard" />
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
