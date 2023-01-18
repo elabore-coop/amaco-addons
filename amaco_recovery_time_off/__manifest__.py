@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_recovery_time_off",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.2.0",
     "author": "Elabore",
     "website": "https://elabore.coop",
     "maintainer": "Stéphan Sainléger",

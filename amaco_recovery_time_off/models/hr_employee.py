@@ -40,8 +40,8 @@ class HrEmployeeBase(models.AbstractModel):
     def generate_recovery_allocation(self, values):
         self.ensure_one()
         nb_recovery_hours = self._calculate_number_eligible_days(values) * self.env.company.recovery_time_ratio
-        nb_recovery_days = nb_recovery_hours / self.resource_id.calendar_id.hours_per_day
-        #TODO : check if more data is needed
+        # nb_recovery_days = nb_recovery_hours / self.resource_id.calendar_id.hours_per_day
+        nb_recovery_days = nb_recovery_hours / 7 # Amaco calculation is based on a 35h week, then 7h/day.
         self.env['hr.leave.allocation'].create({
             'name': values["campaign_name"] + " - " + self.name,
             'holiday_status_id': self.env.ref("hr_holidays.holiday_status_comp").read()[0]["id"],
