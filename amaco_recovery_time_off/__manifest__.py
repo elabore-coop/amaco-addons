@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_recovery_time_off",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "author": "Elabore",
     "website": "https://elabore.coop",
     "maintainer": "Stéphan Sainléger",
@@ -13,6 +13,7 @@
     # any module necessary for this one to work correctly
     "depends": [
         "base",
+        "hr_effective_attendance_period",
         "hr_holidays",
     ],
     "qweb": [
