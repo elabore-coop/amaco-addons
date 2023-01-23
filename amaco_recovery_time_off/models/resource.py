@@ -38,7 +38,16 @@ class ResourceCalendar(models.Model):
     def _is_worked_attendance(self, resource, day, attendance):
         attendance_start = fields.Datetime.to_datetime(day.date()) + timedelta(hours=attendance.hour_from)
         attendance_end = fields.Datetime.to_datetime(day.date()) + timedelta(hours=attendance.hour_to)
-        resource_leaves = self.env["resource.calendar.leaves"].search([("resource_id", "=", resource.id), ("date_from", "<=", attendance_start), ("date_to", ">=", attendance_end)])
+        resource_leaves = self.env["resource.calendar.leaves"].search(
+            [
+                ("company_id", "=", resource.company_id.id),
+                ("date_from", "<=", attendance_start),
+                ("date_to", ">=", attendance_end),
+                "|",
+                ("resource_id", "=", resource.id),
+                ("resource_id", "=", None),
+            ]
+        )
         if resource_leaves:
             return False
         else:
