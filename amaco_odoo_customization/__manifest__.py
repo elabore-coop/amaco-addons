@@ -69,6 +69,7 @@ This module is maintained by ELABORE.
     # always loaded
     "data": [
         "views/project.xml",
+        "views/account_move_views.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
