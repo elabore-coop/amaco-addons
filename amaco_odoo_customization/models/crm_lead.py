@@ -8,8 +8,8 @@ class Lead(models.Model):
 
     def write(self, vals):
         res = super(Lead, self).write(vals)
-        if self.analytic_account:
-            self.analytic_account.active = self.active
+        #if self.analytic_account:
+        #    self.analytic_account.active = self.active
         return res
     
     @api.model
