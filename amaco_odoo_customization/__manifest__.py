@@ -71,7 +71,6 @@ This module is maintained by ELABORE.
         "views/project.xml",
         "views/account_move_views.xml",
         "views/hr_expense_views.xml",
-        "data/data_amaco_odoo_customization.xml"
     ],
     # only loaded in demonstration mode
     "demo": [],
