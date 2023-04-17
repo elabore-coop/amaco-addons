@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 
+        Sale order search view 
+            * add search by project
+    -->
+    <record id="view_sales_order_filter_amaco_inherit" model="ir.ui.view">
+        <field name="name">sale.order.list.select.amaco.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="priority" eval="15"/>
+        <field name="inherit_id" ref="sale.view_sales_order_filter" />
+        <field name="arch" type="xml">
+            <search position="inside">
+                <field name="project_id" />                
+            </search>
+        </field>
+    </record>
+</odoo>

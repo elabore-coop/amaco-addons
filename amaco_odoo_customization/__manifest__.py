@@ -71,6 +71,7 @@ This module is maintained by ELABORE.
         "views/project.xml",
         "views/account_move_views.xml",
         "views/hr_expense_views.xml",
+        "views/sale_order_views.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
