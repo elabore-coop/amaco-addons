@@ -62,6 +62,7 @@ This module is maintained by ELABORE.
         "sale",
         "project",
         "sale_timesheet",
+        "sale_management"
     ],
     "external_dependencies": {
         "python": [],
@@ -72,6 +73,7 @@ This module is maintained by ELABORE.
         "views/account_move_views.xml",
         "views/hr_expense_views.xml",
         "views/sale_order_views.xml",
+        "views/sale_order_template_views.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
