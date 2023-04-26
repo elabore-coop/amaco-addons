@@ -74,6 +74,7 @@ This module is maintained by ELABORE.
         "views/hr_expense_views.xml",
         "views/sale_order_views.xml",
         "views/sale_order_template_views.xml",
+        "report/hr_expense_report.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
