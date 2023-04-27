@@ -6,6 +6,9 @@ from odoo.tools.pdf import OdooPdfFileReader, OdooPdfFileWriter
 import PyPDF2
 import logging
 from odoo import http
+from reportlab.pdfgen import canvas
+from reportlab.lib.utils import ImageReader
+from reportlab.lib.pagesizes import letter, A4
 
 logger = logging.getLogger(__name__)
 
@@ -39,12 +42,22 @@ class Extension(main.ReportController):
 
             # Open each attachments, and write it page by page in new pdf
             for att in attachments:
-                try:
-                    attachment_reader = OdooPdfFileReader(io.BytesIO(base64.b64decode(att.datas)), strict=False)
-                    for n in range(attachment_reader.getNumPages()):
-                        writer.addPage(attachment_reader.getPage(n))
-                except PyPDF2.utils.PdfReadError: # Case of non-pdf attachments
-                    logger.info('Attachment %s cannot be merged in expense report'%(att.name,))
+                if att.mimetype == "application/pdf":
+                    try:
+                        attachment_reader = OdooPdfFileReader(io.BytesIO(base64.b64decode(att.datas)), strict=False)
+                        for n in range(attachment_reader.getNumPages()):
+                            writer.addPage(attachment_reader.getPage(n))
+                    except PyPDF2.utils.PdfReadError: # Case of non-pdf attachments
+                        logger.info('Attachment %s cannot be merged in expense report'%(att.name,))
+                elif 'image/' in att.mimetype:
+                    packet = io.BytesIO()                    
+                    can = canvas.Canvas(packet)
+                    img = ImageReader(io.BytesIO(base64.b64decode(att.datas)))
+                    can.drawImage(img, 0, 0, A4[0]*0.9, A4[1]*0.9, preserveAspectRatio=True)
+                    can.save()
+                    packet.seek(0)
+                    attachment_reader = OdooPdfFileReader(packet)
+                    writer.addPage(attachment_reader.getPage(0))
 
             # Write new pdf to res.data
             buffer = io.BytesIO()
