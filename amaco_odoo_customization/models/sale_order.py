@@ -13,6 +13,12 @@ class SaleOrderLine(models.Model):
         values["team_id"] = self.order_id.team_id.id
         return values
     
+    def _timesheet_create_project(self):
+        project = super()._timesheet_create_project()
+        # when creating project at sale_order confirmation, link project to sale order
+        project.sale_order_id.project_id = project.id
+        return project
+    
 
 
 class SaleOrder(models.Model):
