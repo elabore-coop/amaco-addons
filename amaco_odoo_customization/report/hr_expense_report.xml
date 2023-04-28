@@ -34,14 +34,14 @@
                     <thead>
                         <tr>
                             <th>Date</th>                            
-                            <th>Type</th>
+                            <th width="200px">Type 2</th>
                             <th>Cpt. comptable</th>
-                            <th>Cpt. analytique</th>
-                            <th class="text-center">Ref</th>
-                            <th>PU</th>                            
+                            <th width="150px">Cpt. analytique</th>
+                            <th  width="150px" class="text-center">Ref</th>
+                            <th>PU HT</th>                            
                             <th class="text-center">Qté</th>
                             <th>TVA</th>
-                            <th class="text-right">Prix</th>                            
+                            <th class="text-right">Prix TTC</th>                            
                         </tr>
                     </thead>
                     <tbody>
