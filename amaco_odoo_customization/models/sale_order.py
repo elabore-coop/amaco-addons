@@ -24,6 +24,9 @@ class SaleOrderLine(models.Model):
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
+    sum_outstanding = fields.Monetary(string="Remains to be invoiced")
+    sum_pending_work = fields.Monetary(string="Remains to be done")
+
     @api.onchange('sale_order_template_id')
     def onchange_sale_order_template_id(self):
         """ WARNING !!!!

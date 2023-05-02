@@ -6,14 +6,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-19 07:30+0000\n"
-"PO-Revision-Date: 2023-04-19 07:30+0000\n"
+"POT-Creation-Date: 2023-05-02 11:05+0000\n"
+"PO-Revision-Date: 2023-05-02 11:05+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "<strong>Date :</strong>"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "<strong>Description :</strong>"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "<strong>Employé :</strong>"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "<strong>Payé par :</strong>"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "<strong>Validé par :</strong>"
+msgstr ""
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense__analytic_account_id
@@ -26,6 +56,21 @@ msgstr "Compte analytique"
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_payment__analytic_account_id
 msgid "Analytic account"
 msgstr "Compte analytique"
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Cpt. analytique"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Cpt. comptable"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Date"
+msgstr ""
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard__departure_reason
@@ -138,6 +183,16 @@ msgid "Origin"
 msgstr "Origine"
 
 #. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "PU HT"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Prix TTC"
+msgstr ""
+
+#. module: amaco_odoo_customization
 #: model:ir.model,name:amaco_odoo_customization.model_project_project
 msgid "Project"
 msgstr "Projet"
@@ -150,14 +205,39 @@ msgid "Pôle"
 msgstr ""
 
 #. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Qté"
+msgstr ""
+
+#. module: amaco_odoo_customization
 #: model:ir.model,name:amaco_odoo_customization.model_sale_order_template_line
 msgid "Quotation Template Line"
 msgstr "Ligne Modèle de devis"
 
 #. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Rapport des notes de frais"
+msgstr ""
+
+#. module: amaco_odoo_customization
 #: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__redudancy_firing
 msgid "Redudancy Firing"
 msgstr "Licenciement économique"
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Ref"
+msgstr ""
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__sum_pending_work
+msgid "Remains to be done"
+msgstr "Reste à faire"
+
+#. module: amaco_odoo_customization
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__sum_outstanding
+msgid "Remains to be invoiced"
+msgstr "Reste à facturer"
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__resigned
@@ -180,6 +260,11 @@ msgid "Sales Order Line"
 msgstr "Ligne de bons de commande"
 
 #. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "TVA"
+msgstr ""
+
+#. module: amaco_odoo_customization
 #: model:ir.model.fields,help:amaco_odoo_customization.field_account_bank_statement_line__invoice_origin
 #: model:ir.model.fields,help:amaco_odoo_customization.field_account_move__invoice_origin
 #: model:ir.model.fields,help:amaco_odoo_customization.field_account_payment__invoice_origin
@@ -195,6 +280,11 @@ msgstr "Rupture anticipée CDD suite à une embauche en CDI"
 #: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__try_period_termination
 msgid "Try period termination"
 msgstr "Rupture de période d’essai"
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
+msgid "Type 2"
+msgstr ""
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_template_line__price_unit
