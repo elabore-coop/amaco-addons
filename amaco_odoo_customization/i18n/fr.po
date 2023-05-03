@@ -283,7 +283,7 @@ msgstr "Rupture de période d’essai"
 
 #. module: amaco_odoo_customization
 #: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
-msgid "Type 2"
+msgid "Type"
 msgstr ""
 
 #. module: amaco_odoo_customization

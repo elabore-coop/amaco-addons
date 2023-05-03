@@ -34,7 +34,7 @@
                     <thead>
                         <tr>
                             <th>Date</th>                            
-                            <th width="200px">Type 2</th>
+                            <th width="200px">Type</th>
                             <th>Cpt. comptable</th>
                             <th width="150px">Cpt. analytique</th>
                             <th  width="150px" class="text-center">Ref</th>
