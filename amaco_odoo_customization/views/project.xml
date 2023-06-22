@@ -11,4 +11,16 @@
             </xpath>
         </field>
     </record>
+
+    <record id="view_project_project_filter_amaco" model="ir.ui.view">
+        <field name="name">project.project.select.amaco</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_project_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="team_id" />
+                <field name="analytic_account_id" />
+            </xpath>
+        </field>
+</record>
 </odoo>
