@@ -5,5 +5,4 @@ from odoo import fields, models
 class HrExpense(models.Model):
     _inherit = "hr.expense"
 
-    analytic_account_id = fields.Many2one(required=True)
-    
+    analytic_account_id = fields.Many2one(required=True, check_company=False)
