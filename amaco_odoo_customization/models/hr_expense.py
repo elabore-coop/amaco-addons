@@ -7,3 +7,5 @@ class HrExpense(models.Model):
 
     # add check_company = False to allow multi company selection
     analytic_account_id = fields.Many2one(required=True, check_company=False)
+    employee_id = fields.Many2one(check_company=False)
+    project_id = fields.Many2one(check_company=False)
