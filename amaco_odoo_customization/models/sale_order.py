@@ -104,3 +104,9 @@ class SaleOrder(models.Model):
 
         if template.note:
             self.note = template.note
+
+    def set_default_sender(self, sender_id):
+        '''
+        in a sale order email template (such as "Sales Order: Send by email" or "Sales Order: Confirmation Email"), set a choosen user based on his ID
+        '''
+        return self.env['res.users'].browse(sender_id) or False

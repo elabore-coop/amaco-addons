@@ -45,3 +45,9 @@ class AccountMove(models.Model):
             res = self.env.cr.fetchall()
             return [('id','in',[t[0] for t in res])]
         return [('id', 'in', [])]
+
+    def set_default_sender(self, sender_id):
+        '''
+        in a invoice email template (such as "Facture: envoyer par email"), set a choosen user based on his ID
+        '''
+        return self.env['res.users'].browse(sender_id) or False
