@@ -110,3 +110,14 @@ class SaleOrder(models.Model):
         in a sale order email template (such as "Sales Order: Send by email" or "Sales Order: Confirmation Email"), set a choosen user based on his ID
         '''
         return self.env['res.users'].browse(sender_id) or False
+
+    def _prepare_confirmation_values(self):
+        '''
+        Overwrite sale._prepare_confirmation_values() in addons/sales/models/sale.py to prevent 'date_order' from being replaced by the current date
+        Instead of modifying date_oder, replace the custom field x_sign_date with the current date
+        '''
+
+        return {
+            'state': 'sale',
+            'x_sign_date': self.x_sign_date if self.x_sign_date else fields.Datetime.now()
+        }
