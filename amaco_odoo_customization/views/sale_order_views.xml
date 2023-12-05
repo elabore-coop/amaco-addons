@@ -22,18 +22,37 @@
         <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position="after">
-                <field name="validity_date" string="Due date" widget="remaining_days"/>
+                <field name="validity_date" string="Due date" widget="remaining_days" optional="hide"/>
             </xpath>
             <xpath expr="//field[@name='name']" position="after">
-                <field name="x_sign_date"/>
+                <field name="x_sign_date" optional="hide"/>
               </xpath>
             <xpath expr="//field[@name='name']" position="after">
-                <field name="date_order" string="Quotation date"/>
+                <field name="date_order" widget="date" string="Quotation date" optional="hide"/>
             </xpath>
             <xpath expr="//field[@name='create_date']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
         </field>
     </record>
-
+	
+    <record id="sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_term_id']" position="before">
+                <field name="x_sign_date" options="{'no_open':True,'no_create': True}" attrs="{'invisible': [('state', 'in', ('draft','sent'))]}"/>
+            </xpath>
+            <xpath expr="//field[@name='validity_date']" position="attributes">
+                <attribute name="attrs">{'invisible': [('state', 'in', 'done')], 'readonly': [('state', '=', 'done')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='client_order_ref']" position="after">
+                <field name="opportunity_id" help="Log in the chatter from which opportunity the order originates"/>
+            </xpath>
+            <xpath expr="//field[@name='date_order'][2]" position="attributes">
+                <attribute name="widget">date</attribute>
+            </xpath>
+        </field>
+    </record>
 </odoo>
