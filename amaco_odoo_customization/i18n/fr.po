@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-23 15:22+0000\n"
-"PO-Revision-Date: 2023-11-23 15:22+0000\n"
+"POT-Creation-Date: 2024-03-01 09:46+0000\n"
+"PO-Revision-Date: 2024-03-01 09:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -85,6 +85,7 @@ msgstr "Assistant de départ"
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense_sheet__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_ir_ui_view__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line__display_name
@@ -137,6 +138,12 @@ msgid "Expense Report"
 msgstr "Note de frais"
 
 #. module: amaco_odoo_customization
+#: code:addons/amaco_odoo_customization/models/project.py:0
+#, python-format
+msgid "Expenses"
+msgstr "NDF"
+
+#. module: amaco_odoo_customization
 #: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__personnal_firing
 msgid "Fired for personal reasons"
 msgstr "Licenciement pour motif personnel"
@@ -148,6 +155,7 @@ msgstr "Licenciement pour motif personnel"
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense_sheet__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_ir_ui_view__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line__id
@@ -167,6 +175,7 @@ msgstr "Pièce comptable"
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense_sheet____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_ir_ui_view____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line____last_update
@@ -178,6 +187,11 @@ msgstr "Dernière modification le"
 #: model:ir.model,name:amaco_odoo_customization.model_crm_lead
 msgid "Lead/Opportunity"
 msgstr "Piste/opportunité"
+
+#. module: amaco_odoo_customization
+#: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.sale_order_form_inherit
+msgid "Log in the chatter from which opportunity the order originates"
+msgstr ""
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_departure_wizard__departure_reason__agreed_termination
@@ -315,3 +329,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_template_line__price_unit
 msgid "Unit Price"
 msgstr "Prix unitaire"
+
+#. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_ir_ui_view
+msgid "View"
+msgstr "Vue"
