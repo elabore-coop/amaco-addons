@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "14.0.1.3.0",
+    "version": "14.0.1.4.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -18,6 +18,7 @@ This module customizes Amaco''s Odoo instance:
  - archive analytic account when lead is archived
  - add values to employee departure reasons
  - add team_id field in project model
+ - add columns in product template view tree
 
 Installation
 ============
@@ -75,6 +76,7 @@ This module is maintained by ELABORE.
         "views/sale_order_views.xml",
         "views/sale_order_template_views.xml",
         "report/hr_expense_report.xml",
+        "views/product_template_views.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
