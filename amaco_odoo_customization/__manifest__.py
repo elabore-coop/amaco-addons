@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "14.0.1.4.0",
+    "version": "14.0.1.5.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -19,6 +19,7 @@ This module customizes Amaco''s Odoo instance:
  - add values to employee departure reasons
  - add team_id field in project model
  - add columns in product template view tree
+ - prohibit deletion and modification of a holiday-type calendar event from Calendar app
 
 Installation
 ============
@@ -63,7 +64,8 @@ This module is maintained by ELABORE.
         "sale",
         "project",
         "sale_timesheet",
-        "sale_management"
+        "sale_management",
+        "calendar",
     ],
     "external_dependencies": {
         "python": [],

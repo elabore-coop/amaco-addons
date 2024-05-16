@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 09:46+0000\n"
-"PO-Revision-Date: 2024-03-01 09:46+0000\n"
+"POT-Creation-Date: 2024-05-16 09:57+0000\n"
+"PO-Revision-Date: 2024-05-16 09:57+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -53,6 +53,25 @@ msgid "Analytic account"
 msgstr "Compte analytique"
 
 #. module: amaco_odoo_customization
+#: model:ir.model,name:amaco_odoo_customization.model_calendar_event
+msgid "Calendar Event"
+msgstr "Evénement du calendrier"
+
+#. module: amaco_odoo_customization
+#: code:addons/amaco_odoo_customization/models/calendar_event.py:0
+#, python-format
+msgid ""
+"Cannot delete a leave in calendar event. Manage yours holidays in Leaves app"
+msgstr "Supprimer les congés depuis le calendrier n'est pas autorisé. \n Pour gérer vos congés, allez sur l'application Congés"
+
+#. module: amaco_odoo_customization
+#: code:addons/amaco_odoo_customization/models/calendar_event.py:0
+#, python-format
+msgid ""
+"Cannot modify a leave in calendar event. Manage yours holidays in Leaves app"
+msgstr "Modifier les congés depuis le calendrier n'est pas autorisé. \n Pour gérer vos congés, allez sur l'application Congés"
+
+#. module: amaco_odoo_customization
 #: model_terms:ir.ui.view,arch_db:amaco_odoo_customization.report_expense_sheet
 msgid "Cpt. analytique"
 msgstr ""
@@ -80,12 +99,12 @@ msgstr "Assistant de départ"
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move__display_name
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_calendar_event__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_crm_lead__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense_sheet__display_name
-#: model:ir.model.fields,field_description:amaco_odoo_customization.field_ir_ui_view__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__display_name
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line__display_name
@@ -150,12 +169,12 @@ msgstr "Licenciement pour motif personnel"
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move__id
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_calendar_event__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_crm_lead__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense_sheet__id
-#: model:ir.model.fields,field_description:amaco_odoo_customization.field_ir_ui_view__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__id
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line__id
@@ -170,12 +189,12 @@ msgstr "Pièce comptable"
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_account_move____last_update
+#: model:ir.model.fields,field_description:amaco_odoo_customization.field_calendar_event____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_crm_lead____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_departure_wizard____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_employee____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_hr_expense_sheet____last_update
-#: model:ir.model.fields,field_description:amaco_odoo_customization.field_ir_ui_view____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_project_project____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order____last_update
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_line____last_update
@@ -271,12 +290,12 @@ msgstr ""
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__sum_pending_work
 msgid "Remains to be done"
-msgstr "Reste à faire"
+msgstr ""
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order__sum_outstanding
 msgid "Remains to be invoiced"
-msgstr "Reste à facturer"
+msgstr ""
 
 #. module: amaco_odoo_customization
 #: model:ir.model.fields.selection,name:amaco_odoo_customization.selection__hr_employee__departure_reason__resigned
@@ -329,8 +348,3 @@ msgstr ""
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_template_line__price_unit
 msgid "Unit Price"
 msgstr "Prix unitaire"
-
-#. module: amaco_odoo_customization
-#: model:ir.model,name:amaco_odoo_customization.model_ir_ui_view
-msgid "View"
-msgstr "Vue"
