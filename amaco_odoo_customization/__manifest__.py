@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "14.0.1.6.0",
+    "version": "14.0.1.7.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -20,6 +20,7 @@ This module customizes Amaco''s Odoo instance:
  - add team_id field in project model
  - add columns in product template view tree
  - prohibit deletion and modification of a holiday-type calendar event from Calendar app
+ - change product and product template rights : sales, stocks, account, hr expense and purchase administrators cannot write, create or unlink a product
 
 Installation
 ============
@@ -66,6 +67,13 @@ This module is maintained by ELABORE.
         "sale_timesheet",
         "sale_management",
         "calendar",
+        "product",
+        "purchase",
+        "stock",
+        "sale",
+        "hr_expense",
+        "sales_team",
+        "account",
     ],
     "external_dependencies": {
         "python": [],
@@ -79,6 +87,7 @@ This module is maintained by ELABORE.
         "views/sale_order_template_views.xml",
         "report/hr_expense_report.xml",
         "views/product_template_views.xml",
+        "security/ir.model.access.csv",
     ],
     # only loaded in demonstration mode
     "demo": [],
