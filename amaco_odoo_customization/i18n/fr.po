@@ -348,3 +348,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:amaco_odoo_customization.field_sale_order_template_line__price_unit
 msgid "Unit Price"
 msgstr "Prix unitaire"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/components/chatter_topbar/chatter_topbar.xml:0
+#, python-format
+msgid "Send message"
+msgstr "Envoyer un message (au client)"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/components/chatter_topbar/chatter_topbar.xml:0
+#, python-format
+msgid "Log note"
+msgstr "Enregistrer une note (en interne)"
