@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "14.0.1.8.0",
+    "version": "14.0.1.9.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -22,6 +22,7 @@ This module customizes Amaco''s Odoo instance:
  - prohibit deletion and modification of a holiday-type calendar event from Calendar app
  - change product and product template rights : sales, stocks, account, hr expense and purchase administrators cannot write, create or unlink a product
  - add custom traductions
+ - add categories in calendar list view and calendar calendar view
 
 Installation
 ============
@@ -71,7 +72,6 @@ This module is maintained by ELABORE.
         "product",
         "purchase",
         "stock",
-        "sale",
         "hr_expense",
         "sales_team",
         "account",
@@ -90,6 +90,7 @@ This module is maintained by ELABORE.
         "report/hr_expense_report.xml",
         "views/product_template_views.xml",
         "security/ir.model.access.csv",
+        "views/calendar_views.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
