@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- QWeb Reports -->
+        <record id="account.account_invoices" model="ir.actions.report">
+            <field name="print_report_name">'amaco_Facture %s_%s' %(object._get_report_base_filename(), object.partner_id.name)</field>
+        </record>
+
+        <record id="account.account_invoices_without_payment" model="ir.actions.report">
+            <field name="print_report_name">'amaco_Facture %s_%s' %(object._get_report_base_filename(), object.partner_id.name)</field>
+        </record>
+    </data>
+</odoo>

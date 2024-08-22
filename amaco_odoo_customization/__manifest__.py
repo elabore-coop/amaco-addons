@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "14.0.1.9.0",
+    "version": "14.0.1.10.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -91,6 +91,8 @@ This module is maintained by ELABORE.
         "views/product_template_views.xml",
         "security/ir.model.access.csv",
         "views/calendar_views.xml",
+        "report/invoice_report.xml",
+        "report/sale_report.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
