@@ -3,7 +3,7 @@
 
 {
     "name": "amaco_odoo_customization",
-    "version": "14.0.1.10.0",
+    "version": "14.0.1.11.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -23,6 +23,7 @@ This module customizes Amaco''s Odoo instance:
  - change product and product template rights : sales, stocks, account, hr expense and purchase administrators cannot write, create or unlink a product
  - add custom traductions
  - add categories in calendar list view and calendar calendar view
+ - add account move in tree hr expense sheet view
 
 Installation
 ============
@@ -85,6 +86,7 @@ This module is maintained by ELABORE.
         "views/project.xml",
         "views/account_move_views.xml",
         "views/hr_expense_views.xml",
+        "views/hr_expense_sheet_views.xml",
         "views/sale_order_views.xml",
         "views/sale_order_template_views.xml",
         "report/hr_expense_report.xml",
